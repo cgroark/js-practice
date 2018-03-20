@@ -164,5 +164,14 @@ towerBuilder(4)
 console.log("   nothing  ".trim());
 //nothing
 
+//toString()
+//convert integer to string
+function expandedForm(num) {
+  var str = num.toString()
+  return str
+}
 
+expandedForm(4300)
+
+//'4300'
 
