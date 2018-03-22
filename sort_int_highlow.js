@@ -22,3 +22,5 @@ minMax([1,14,26,8,9,2])
 //This works the way it does because whenever "a" is less than "b", 
 //a negative value is returned, which results in the smaller elements 
 //always appearing to the left of the larger ones, in other words, ascending. 
+
+
