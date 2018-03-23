@@ -30,3 +30,19 @@
 
 	{first: "Johannes", last: "Kepler", year: 1571, passed: 1630}]
 
+//using map and filter-
+// 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+    // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+   
+    // const links = select.querySelectorAll('a');
+    //need to convert line above into an array in order to use map function
+    //two options-
+     // const links = Array.from(select.querySelectorAll('a'));
+     //const links =  [...const links = select.querySelectorAll('a')]; //ES6 spread method
+    const select = document.querySelector('.mw-category');
+    const links = Array.from(select.querySelectorAll('a'));
+    const de = links
+      .map(link => link.innerText)
+      .filter(streetName => streetName.includes('de'))
+
+      

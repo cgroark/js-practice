@@ -24,3 +24,4 @@ minMax([1,14,26,8,9,2])
 //always appearing to the left of the larger ones, in other words, ascending. 
 
 
+

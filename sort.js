@@ -32,3 +32,18 @@ const sorted = inventors.sort(function(a,b){
 });
 
 console.table(sorted)
+
+// with ternary operator
+
+const sorted = inventors.sort((a,b) => a.year > b.year ? 1 : -1)
+console.table(sorted)
+
+//multiple people to compare
+
+const allyear = inventors.sort(function(a,b){
+      const firstguy = a.passed - a.year;
+      const nextguy = b.passed - b.year;
+      return firstguy > nextguy ? 1 : -1;
+    })
+
+    console.table(allyear)

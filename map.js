@@ -25,3 +25,20 @@ const names = inventors.map(function(inv){
 
 
 //["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Marie Curie", "Johannes Kepler", "Nicolaus Copernicus", "Max Planck", "Katherine Blodgett", "Ada Lovelace", "Sarah E. Goode", "Lise Meitner", "Hanna Hammarström"]
+
+//using map and filter-
+// 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+    // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+   
+    // const links = select.querySelectorAll('a');
+    //need to convert line above into an array in order to use map function
+    //two options-
+     // const links = Array.from(select.querySelectorAll('a'));
+     //const links =  [...const links = select.querySelectorAll('a')]; //ES6 spread method
+    const select = document.querySelector('.mw-category');
+    const links = Array.from(select.querySelectorAll('a'));
+    const de = links
+      .map(link => link.innerText)
+      .filter(streetName => streetName.includes('de'))
+
+      
