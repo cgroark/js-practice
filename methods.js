@@ -17,6 +17,17 @@ function reverseArr(arr){
 splitArr("wolf at the door")
 //=> [ 'door', 'the', 'at', 'wolf' ]
 
+//concat()
+//combine two strings
+function concatsss(string1, string2){
+  return string1.concat(string2)
+}
+concatsss('oqiwcnwq', 'qowcnqw')
+//can add in extra elements too == string1.concat('  ', string2)
+
+//same with arays == array1.concat(array2)
+
+//=> 'oqiwcnwqqowcnqw'
 
 //join()
 //join combines elements in an array into a string and separates based on what you pass in
@@ -27,7 +38,7 @@ function joinArr(arr){
 joinArr("wolf at the door")
 //=> 'door the at wolf'
 
-//toLowerCase() and toUpperCaser()
+//toLowerCase() and toUpperCase()
 //makes a string lowercase
 function lower(str){
   var smaller = str.toLowerCase()
@@ -146,7 +157,7 @@ sliceIt("elephant",1,4);
 //elephant
 
 //repeat()
-//repturns a string concatenated to itself a given number of times
+//returns a string concatenated to itself a given number of times
 //str.repeat(integer)
 function towerBuilder(nFloors) {
   var arr = []
