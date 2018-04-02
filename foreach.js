@@ -27,3 +27,16 @@ function capNames(names){
 
 
 capNames(["Bob", "Sally", "Jane", "Jim", "Taylor", "Pat"])
+
+//forEach with closure (function withing a function)
+function nameLengths(names){
+  var totalNumberOfLetters = 0;
+  names.forEach(function(name){
+    console.log(totalNumberOfLetters, name.length);
+    totalNumberOfLetters = totalNumberOfLetters + name.length;
+  })
+  console.log("Total letters: " + totalNumberOfLetters);
+}
+
+nameLengths(["Bob", "Sally", "Jane", "Jim", "Taylor", "Pat"]);
+
