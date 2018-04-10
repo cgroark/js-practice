@@ -40,3 +40,49 @@ function nameLengths(names){
 
 nameLengths(["Bob", "Sally", "Jane", "Jim", "Taylor", "Pat"]);
 
+////
+var books = [
+  { title: "Stranger in a Strange Land", author: "Robert Heinlein"},
+  { title: "The Moon is a Harsh Mistress", author: "Robert Heinlein"},
+  { title: "Childhood's End", author: "Arthur C. Clarke"},
+  { title: "Slaughterhouse 5", author: "Kurt Vonnegut"},
+  { title: "Cat's Cradle", author: "Kurt Vonnegut"},
+  { title: "Breakfast of Champions", author: "Kurt Vonnegut"},
+  { title: "A Scanner Darkly", author: "Phillip K. Dick"},
+  { title: "Do Androids Dream of Electric Sheep", author: "Phillip K. Dick"}
+];
+
+function print(){
+  books.forEach(function(book){
+    console.log(book.title)
+  })
+}
+
+print()
+
+///show number of books by KV
+let books = [
+  { title: "Stranger in a Strange Land", author: "Robert Heinlein"},
+  { title: "The Moon is a Harsh Mistress", author: "Robert Heinlein"},
+  { title: "Childhood's End", author: "Arthur C. Clarke"},
+  { title: "Slaughterhouse 5", author: "Kurt Vonnegut"},
+  { title: "Cat's Cradle", author: "Kurt Vonnegut"},
+  { title: "Breakfast of Champions", author: "Kurt Vonnegut"},
+  { title: "A Scanner Darkly", author: "Phillip K. Dick"},
+  { title: "Do Androids Dream of Electric Sheep", author: "Phillip K. Dick"}
+];
+
+
+let totalBooksByKV = 0;
+
+function vonn(){
+  books.forEach(function(book){
+    if(book.author === "Kurt Vonnegut"){
+      totalBooksByKV++
+    }
+  })
+  return totalBooksByKV
+}
+
+console.log(vonn())
+
