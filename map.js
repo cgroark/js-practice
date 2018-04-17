@@ -1,3 +1,16 @@
+
+//add ten to each number in an array
+
+function addTen(arr){
+  var tenMore = arr.map(function(num){
+    return num + 10;
+  })
+  return tenMore
+}
+
+addTen([4,7,8])
+
+
 //map takes in an array and returns new array of same lengt after calling a function on 
 //each element
 //calls callback on each element and does not mutate og array
