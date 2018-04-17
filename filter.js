@@ -1,3 +1,16 @@
+function onlyE(arr){
+  var removeSome = arr.filter(function(friend){
+    return friend[0] === 'E'
+  })
+  return removeSome
+}
+
+onlyE(['Edward', 'Jack', 'Harry'])
+//
+
+   
+=> [ 'Edward' ]
+
 //filter
 //creates a new array with elements in an array that pass a test provided in a function 
 //calls a callback function once for each element in an array 
